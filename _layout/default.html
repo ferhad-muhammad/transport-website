@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>My Cool Website</title>
+    <!-- Styles -->
+    <link href='{{ "/assets/css/main.css" | prepend: site.baseurl }}' rel="stylesheet">
+    <script defer src="{{'/assets/vendor/jquery.min.js' | prepend: site.baseurl}}"></script>
+    <script defer src="{{'/assets/vendor/popper.min.js' | prepend: site.baseurl}}"></script>
+    <script defer src="{{'/assets/vendor/bootstrap.min.js' | prepend: site.baseurl}}"></script>
+  </head>
+  <body>
+{% include header.html %}
+{{ content }}
+{% include footer.html %}
+</body>
+</html>
